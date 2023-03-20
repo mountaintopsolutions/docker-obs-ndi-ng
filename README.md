@@ -9,3 +9,14 @@ For now the newer style image based on the accetto image is not working correctl
 
 A working version of the legacy image is posted to the legacy branch.
 
+
+WHATS TESTED (LEGACY VERSION)
+vnc works
+obs works
+nvidia gpu encoding works
+NDI plugin works
+streaming works
+
+WHATS NOT TESTED
+Intel quicksync encoding (should still work?)
+AMD encoding (no packages installed)
