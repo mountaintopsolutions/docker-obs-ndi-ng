@@ -18,7 +18,7 @@ A working version of the legacy image is posted to the legacy branch.
  - [x] NDI plugin works
  - [x] Streaming works
 
-### WHATS NOT TESTED
+#### WHATS NOT TESTED
 
  - [ ] Intel Quicksync encoding (Should still work?)
  - [ ] AMD GPU encoding (no packages installed)
