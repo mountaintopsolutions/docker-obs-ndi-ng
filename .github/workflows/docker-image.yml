@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches: [ legacy ]
   pull_request:
-    branches: [ $default-branch ]
+    branches: [ legacy ]
 
 jobs:
 
@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag docker-obs-ndi-ng:$(date +%s)
+      run: docker build . --file Dockerfile --tag docker-obs-ndi-ng:legacy-$(date +%s)
