@@ -31,7 +31,7 @@ Update the repository URL in unraid to be
 
  and apply to fix your obs-ndi plugin
 
-or run from the command line with something like:
+or run from the command line on any properly configured docker host with something like:
 
 for all gpus: 
 
