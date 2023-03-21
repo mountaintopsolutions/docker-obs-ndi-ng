@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>obs-ndi</Name>
+  <Repository>mountaintopsolutions/docker-obs-ndi-ng:legacy-latest</Repository>
+  <Registry>https://hub.docker.com/repository/docker/patrickstigler/obs-ndi</Registry>
+  <Network>br0</Network>
+  <MyIP>192.168.0.222</MyIP>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/114911-support-obs-ndi/</Support>
+  <Project>https://github.com/patrickstigler/docker-obs-ndi</Project>
+  <Overview>The OBS with NDI is incorporated into the container and can be used to stream your desktop. &#xD;
+&#xD;
+With the latetest OBS version the is support for obs-websocket and Intel quicksync&#xD;
+&#xD;
+You can change the default VNC password of '123456' on the docker run command to whatever you wish.&#xD;
+You can connect with your own VNC client at 5900 or use the webclient at 5901</Overview>
+  <Category>GameServers: Productivity: MediaApp:Video MediaServer:Video</Category>
+  <WebUI>http://[IP]:[PORT:5901]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/patrickstigler/unraid_app_templates/master/obs-ndi/obs-ndi.xml</TemplateURL>
+  <Icon>https://obsproject.com/assets/images/new_icon_small-r.png</Icon>
+  <ExtraParams>--runtime=nvidia</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1672189923</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Config Path" Target="/config/obs-studio" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/obs</Config>
+  <Config Name="Port" Target="5901" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5901</Config>
+  <Config Name="VNC_PASSWD" Target="VNC_PASSWD" Default="123456" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">123456</Config>
+  <Config Name="NVIDIA_VISIBLE_DEVICES" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="NVIDIA_DRIVER_CAPABILITIES" Target="NVIDIA_DRIVER_CAPABILITIES" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+  <Config Name="Port for obs-websocket" Target="4455" Default="4455" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4456</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+</Container>
