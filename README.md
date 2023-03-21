@@ -10,6 +10,7 @@ For now the newer style image based on the accetto image is not working correctl
 
 A working version of the legacy image is posted to the legacy branch.
 
+## The default VNC password is 123456
 
 #### WHATS TESTED (LEGACY VERSION)
  - [x] VNC works
