@@ -46,8 +46,8 @@ jobs:
           context: .
           platforms: linux/amd64
           push: true
-           tags: |
-              ghcr.io/mountaintopsolutions/docker-obs-ndi-ng:legacy-ci-${BUILD_TAG}
+          tags: |
+             ghcr.io/mountaintopsolutions/docker-obs-ndi-ng:legacy-ci-${BUILD_TAG}
 #             mountaintopsolutions/docker-obs-ndi-ng:legacy-testci-${BUILD_TAG}
 #          tags: |
 #            mountaintopsolutions/docker-obs-ndi-ng:legacy-citest
