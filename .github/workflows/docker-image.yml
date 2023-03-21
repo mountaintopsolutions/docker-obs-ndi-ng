@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ legacy ]
+    branches: [ legacy, legacy-ci]
   pull_request:
-    branches: [ legacy ]
+    branches: [ legacy, legacy-ci]
 
 jobs:
 
